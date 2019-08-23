@@ -34,6 +34,42 @@ position: relative;
 animation-name:moving;
 animation-duration:6s;
 animation-iteration-count: infinite;}
+div {
+  position: absolute;
+  top: 440px;
+  right: 600px;
+  background-color: red;
+  animation-name: coolMoves;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+}
+@keyframes coolMoves {
+  0%   {background-color: red; left:740px; top:740px;}
+  25%  {background-color: blue; left:740px; top:600px;}
+  50%  {background-color: green; left:600px; top:600px;}
+  75%  {background-color: yellow; left:600px; top:740px;}
+  100% {background-color: red; left:740px; top:740px;}
+}
+  body {
+  font-family: "Courier New";
+}
+    center{color:lightblue;
+      font-size:55px;
+      text-shadow: 2px 2px 5px grey;
+      border: 5px solid blue;
+      border-width:13px;
+    }
+    p{background-image: linear-gradient(to bottom right, red,orange,  yellow,green);}
+    p:first-letter{
+      color:purple;
+      font-size:xx-large
+    }
+    img{opacity: 0.4;}
+    img:hover{opacity:1.4;}
+    table{border-style:solid;
+    border-width:10px;
+    background-color:yellow}  
 </style>    
 <body>
 
@@ -80,5 +116,50 @@ animation-iteration-count: infinite;}
 <strong>why is this text so strong? I question it deeply.</strong>
 <div></div>
 <input type="datetime-local">
+<center>The Gud Life</center>
+        <p> Hello World, welcome to my <strong>liar</strong> <br>
+        I hope you enjoy the nonsensical nature <br>
+        of this place...  HaHaHaHa </p>
+
+        <h2>To do List</h2>
+        <div><img src="smile.jpg" alt="Smile="width="100px;height:100px;"></div>
+<ol>
+  <li>Make coffee</li>
+  <li>Create table of tables</li>
+  <li>Do (NOT) press Button</li>
+  <li>Enter the Gungeon</li>
+</ol>  
+
+<h2>Sports Table</h2>
+<table style="width:40%">
+                <tr>
+                  <th>Sport</th>
+                  <th>Number of people</th> 
+                  <th>Goodness</th>
+                </tr>
+                <tr>
+                  <td>Tennis</td>
+                  <td>2 or 4</td>
+                  <td> 11/10</td>
+                </tr>
+                <tr>
+                  <td>Soccor</td>
+                  <td>11teen</td>
+                  <td> 6/10</td>
+                </tr>
+                <tr>
+                  <td>Hockey</td>
+                  <td>6</td>
+                  <td>-11/10</td>
+                </tr>
+              </table>
+
+<br>
+<h3>Button ahead</h3>
+<input type="button" onclick="alert('Told ya')" value="WARNING: POINTLESS">
+<h3>Enter the</h3>
+<a href="https://dodgeroll.com/gungeon/">Gungeon</a>
+<br>
+<img src="gungeon.png" alt="Guns style="width="450px; height:350px;">
 </body>
 </html>
